@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/signin.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<body class="index-body">
+
+    <button class="signin-button " id="sign-in">Sign in</button>
+    <div class="body-hold">
+    <p class="glowing-effect left"> without a pass.. </p>
+    
+
+        <div class="modal-wrapper none" id="modal-wrapper">
+            <div class="modal">
+            
+                <!-- TODO fix values and make input required, style sign_in pasword and email same as without prefix-->
+                <form id="sign-in-form" class="none" name="sign-in-form" novalidate>
+                    <input class="text-box" type="email" id="sign-in-email" placeholder="Enter your email..." required>
+                    <!-- password -->
+                    <input class="text-box" type="text" id="sign-in-password" placeholder="insert password pweaseee "name="password" minlength="8" required >
+                    <button id="sign-in-admin" class="modal-box signin-button" type="button"> Thou shant hesitate</button>
+                </form>
+            </div>
+        </div>
+    <p class="glowing-effect right">thou shall not pass!</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

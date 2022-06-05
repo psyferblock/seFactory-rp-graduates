@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- profile should be the html that pops up when the searched candidate is called from the database -->
+    <nav class="nav-bar">
+        <div class="header">
+            <input type="text"class="textbox">
+            <li><a href="../index.html">Logout</a></li>
+            <a href=""><img id="profile-pic" src="" alt=""></a>
+        </div>
+    </nav>
+    <section>
+        <header class="top-profile">
+            <img src="../assets/gara.jpg" alt="profile" class="profile-pic">
+        
+            <div class="profile-box">
+                <div class="profile-info">
+                    <h3 class="info-user">name: <span class="info-detail">name fullname </span></h3>
+                    <h3 class="info-user">age: <span class="info-detail">age updated</span></h3>
+                    <h3 class="info-user">rating:<span class="info-detail">average rating</span></h3>
+                    <h3 class="info-user">cv:<span class="info-detail"><a>cv file</a></span></h3>
+                    <h3 class="info-user">linked in:<span class="info-detail"><a>linked in profile</a></span></h3>
+                    <h3 class="info-user">git hub:<span class="info-detail"><a>git hub</a></span></h3>
+
+                    
+
+                </div>
+                <!-- status box of employee. attached will be the reviews by the rp -->
+               <div class="status-box">
+                    <div >
+                    <h3 class="info-detail" id="status-update"> status update</h3>
+                    <input type="text" class="status-update">
+                    <div><i class="fa-solid fa-thumbs-up"></i></div>
+                    </div>
+                    <div>
+                        <img src="" alt="like button">
+                    </div>
+               </div>
+            </div>
+            
+        </header>
+        </div>
+
+    </section>
+    <script>
+        // script that was supposed to be for the udating of each graduates personal status on the app  -->
+        let status_update=document.getElementById("status-update");
+        status_update.addEventListener("click",updateStatus)
+        let updateStatus= ()=>{
+
+        }
+
+    </script>
+    
+</body>
+</html>

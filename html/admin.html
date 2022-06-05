@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/add_profile.js" defer></script>
+    <script src="../js/search_bar.js" defer></script>
+
+
+</head>
+<body>
+    <div class="admin-body">
+        <div>
+            <!-- search bar fro the rps. teh bar is suposed to return an rp with every graduate employed by them  -->
+            <div class="search-bar-box">
+                <h3 class="search-bar-text">search bar... </h3>
+                <input type="text" class="search-bar-input" id="search-bar" placeholder="enter name of rp">
+                <button id="search-button" class="admin-button">search rp's</button>
+            </div>
+            
+            <div>
+                <!-- the list where the results of the search are to be called from database -->
+                <ul class="ul-admin" id="ul-results">
+
+                </ul>
+            </div>
+            <button id="add-graduate"class="admin-button">graduate profile</button>
+            <button id="add-rp"class="admin-button">rp profile</button>
+        </div>
+        <!-- container that pops up when graduate is to be added  -->
+        <div  class="main-container-admin ">
+            <div class="graduate-container child-container none"id="graduate-container">
+                <div id="box" class="box">
+                
+                    <input class="textbox" id="name-graduates" placeholder="Full Name" type="text">
+                    <label for="gender" class="textbox">Gender</label>
+                        <select class="textbox" name="gender" id="gender" required>
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                    <input class="textbox" id="graduates-email" placeholder="E-mail" type="text">
+                    <input class="textbox" id="graduates-linkedin" placeholder="linked in" type="">
+                    <input class="textbox" id="graduates-rp" placeholder="rp-id" type="">
+                    <input class="textbox" id="graduates-location"placeholder="location" type="">
+                    <input class="textbox" id="graduates-github"placeholder="git hub" type="">
+                    <button class="admin-button" id="graduates-submit"placeholder="submit" type="">submit-graduate</button>
+                </div>
+            </div>
+            
+            <!-- container that pops up when rp is to be added  -->
+            <div class="rp-container none child-container" id="rp-container">
+                <div id="box" class="box">
+                    <input class="textbox" id="rp-name" placeholder="rp name" type="text">
+                    <input class="textbox" id="rp-email" placeholder="E-mail" type="text">
+                    <input class="textbox" id="rp-password" placeholder="password" type="text">
+                    <input class="textbox" id="rp-location"placeholder="location" type="">
+                    <input class="textbox" id="rp-linkedin" placeholder="linked in" type="text">
+                    <input class="textbox" id="rp-title" placeholder="rp title" type="">
+                    <input class="textbox" id="rp-current-position" placeholder="git hub" type="">
+                    <button class="admin-button" id="rp-submit" placeholder="submit" type="">submit-rp</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+
+</body>
+</html>
